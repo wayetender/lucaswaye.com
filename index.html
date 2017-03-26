@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Lucas Waye</title>
+    <meta name="description" content="Lucas Waye's home page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/mfglabs_iconset.css">
+
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+<div id="loading"><div id="status">&nbsp;</div></div>
+<div id="wrapper">
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. 
+        Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="container">
+        <div id="header">
+            <div id="me-image"></div>
+            <h2>Lucas Waye<span class="small"></span>
+                <span class="name-links">
+                    <a href="https://github.com/wayetender/" title="Github"><i class="icon-octopus iconsm" aria-hidden="true"></i></a>
+                    <a href="https://keybase.io/wayetender" title="Keybase"><i class="icon-unlock_alt iconsm" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/wayetender" title="Twitter"><i class="icon-twitter_circle iconsm" aria-hidden="true"></i></a>
+                    <a href="http://stackshare.io/wayetender/my-stack" title="StackShare"><i class="icon-display_graph iconsm" aria-hidden="true"></i></a>
+                    <a href="https://scholar.google.com/citations?user=_hK-v-EAAAAJ" title="Google Scholar"><i class="icon-newspaper iconsm" aria-hidden="true"></i></a>
+                    <a href="#" class="emaillink" title="Email me"><i class="icon-mail iconsm" aria-hidden="true"></i></a>
+                </span>
+            </h2>
+            <h3>Graduate Student<br>
+                <a href="http://www.seas.harvard.edu/">Harvard <span class="extra">John A. Paulson</span> School of Engineering and Applied Sciences</a></h3>
+            <p>
+            <span class="full-email"></span>
+            <strong>Office:</strong> 309 <a href="http://goo.gl/maps/pmJma">Maxwell Dworkin, 33 Oxford St, Cambridge MA 02138</a><br>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="section">
+            <h2>About Me</h2>
+            I am a fifth (and final) year Ph.D. candidate advised by <a class="person-link" href="http://people.seas.harvard.edu/~chong/">Stephen Chong</a> 
+            in the <a href="http://pl.seas.harvard.edu/">programming languages group</a> at Harvard.
+            My research focuses on principled approaches to building correct and secure distributed applications. 
+            I received a S.M. from Harvard in 2015 and an A.B. from Cornell in 2011.
+        </div>
+
+        <div class="section">
+            <h2>Publications
+             <span id="filter-string" style="display:none"></span> 
+            <!-- <span class="filter-btn filter-kind">Conference Paper</span>
+            <span class="filter-btn filter-kind">Workshop Paper</span>
+            <span class="filter-btn filter-kind">Patent</span> -->
+            <span class="filter-btn filter-topic">Distribution</span>
+            <span class="filter-btn filter-topic">Security</span>
+            <span class="filter-btn filter-topic">Privacy</span>
+            </h2>
+
+            <div id="pubs-intro">
+            The majority of my time as a computer scientist has been 
+            spent on communicating my ideas (in emails, meetings, presentations, design reviews, 
+            etc.) rather than actually developing them.
+            Here you can find my published write-ups of some of what I have worked
+            on in the past.
+            <p>
+            Click on one of the buttons above to see my publications on that topic.
+            </div>
+
+            <ol id="pubs" class="lst">
+                <li data-kind="Conference Paper" data-topic="Security">
+                    <a class="pub-link" href="#">Flexible manipulation of labeled values for information-flow control libraries</a>
+                    <span class="pub-quickdetails">, ESORICS 2016 (with Marco Vassena, Pablo Buiras, and Alejandro Russo)
+                        <br> Allow secure computation on labeled values in DIFC systems without unlabeling by 
+                             using the <em>functor</em> structure and <em>applicative</em> operator. 
+                    </span>
+                    <span class="tags-no"></span> <br>
+                    <div class="pub-details">
+                        <div class="pub-abstract">
+                            <span class="pub-abstract-title">abstract:</span>
+                            The programming language Haskell plays a unique, privileged role in Information-Flow Control
+                            (IFC) research: it is <em>able to enforce information security via libraries</em>. Many state-of-the-
+                            art libraries (e.g., LIO, HLIO, and MAC) allow computations to manipulate data with
+                            different security labels by introducing the notion of <em>labeled values</em>, which protect values
+                            with explicit labels by means of an abstract data type. While computations have an
+                            underlying algebraic structure in such libraries (i.e. monads), there is no research on
+                            structures for labeled values and their impact on the programming model. In this paper, we
+                            add the <em>functor</em> structure to labeled values, which allows programmers to conveniently and
+                            securely perform computations without side-effects on such values, and an <em>applicative</em>
+                            operator, which extends this feature to work on multiple labeled values combined by a multi-
+                            parameter function. This functionality simplifies code, as it does not force programmers to
+                            spawn threads to manipulate sensitive data with side-effect free operations. Additionally,
+                            we present a <em>relabel</em> primitive which securely modifies the label of labeled values. This
+                            operation also helps to simplify code when aggregating data with heterogeneous labels, as it
+                            does not require spawning threads to do so. We provide mechanized proofs of the soundness
+                            our contributions for the security library MAC, although we remark that our ideas apply to
+                            LIO and HLIO as well.
+                        </div>
+                            <a class="person-link" href="https://www.chalmers.se/en/Staff/Pages/vassena.aspx">Marco Vassena</a>,
+                            <a class="person-link" href="http://people.seas.harvard.edu/~pbuiras/">Pablo Buiras</a>, 
+                        Lucas Waye, 
+                            and <a class="person-link" href="https://www.chalmers.se/en/staff/Pages/russo.aspx">Alejandro Russo</a><br>
+                        In Proceedings of the 21st European Symposium on Research in Computer Security 
+                            (<a href="http://www.ics.forth.gr/esorics2016/">ESORICS</a>), September 2016.<br>
+                            [<a href="papers/mac-esorics16.pdf">Paper</a>]
+                    </div>
+                </li>
+                <li data-kind="Workshop Paper" data-topic="Security">
+                    <a class="pub-link" href="#">It's my privilege: controlling downgrading in DC-labels</a>
+                    <span class="pub-quickdetails">, STM 2015 (with Pablo Buiras, Dan King, Stephen Chong, and Alejandro Russo)
+                    <br> The use of privileges in DIFC systems can be limited to prevent their misuse by restricting 
+                         <em>where</em> in the security lattice they may be used and <em>who</em> may influence their use.
+                    </span>
+                    <span class="tags-no"></span> <br>
+                    <div class="pub-details">
+                        <div class="pub-abstract">
+                            <span class="pub-abstract-title">abstract:</span>
+                            Disjunction Category Labels (DC-labels) are an expressive label format used to classify the
+                            sensitivity of data in information-flow control systems. DC-labels use capability-like
+                            privileges to downgrade information. Inappropriate use of <em>privileges</em> can compromise
+                            security, but DC-labels provide no mechanism to ensure appropriate use. We extend DC-labels
+                            with the novel notions of <em>bounded privileges</em> and <em>robust privileges</em>. Bounded privileges
+                            specify and enforce upper and lower bounds on the labels of data that may be downgraded.
+                            Bounded privileges are simple and intuitive, yet can express a rich set of desirable
+                            security policies. Robust privileges can be used only in downgrading operations that are
+                            <em>robust</em>, i.e., the code exercising privileges cannot be abused to release or certify more
+                            information than intended. Surprisingly, robust downgrades can be expressed in DC-labels as
+                            downgrading operations using a weakened privilege. We provide <em>sound and complete</em> run-time
+                            security checks to ensure downgrading operations are robust. We illustrate the applicability
+                            of bounded and robust privileges in a case study as well as by identifying a vulnerability
+                            in an existing DC-label-based application.
+                        </div>
+                        Lucas Waye, 
+                            <a class="person-link" href="http://people.seas.harvard.edu/~pbuiras/">Pablo Buiras</a>, 
+                            <a class="person-link" href="https://dekvek.com/">Dan King</a>, 
+                            <a class="person-link" href="http://people.seas.harvard.edu/~chong/">Stephen Chong</a>, 
+                            and <a class="person-link" href="https://www.chalmers.se/en/staff/Pages/russo.aspx">Alejandro Russo</a><br>
+                        In Proceedings of the 11th International Workshop on Security and Trust Management 
+                            (<a href="http://stm2015.di.unimi.it/">STM</a>), September 2015.<br>
+                            [<a href="papers/rprivs-stm15.pdf">Paper</a> | <a href="presentations/rprivs-stm15.pdf">Slides</a>]
+                    </div>
+                </li>
+                <li data-kind="Conference Paper" data-topic="Security">
+                    <a class="pub-link" href="#">Exploring and enforcing security guarantees via program dependence graphs</a>
+                    <span class="pub-quickdetails">, PLDI 2015 (with Andrew Johnson, Scott Moore, and Stephen Chong)
+                        <br>A program analysis and understanding tool that enables the specification and enforcement of precise
+                            application-specific information security guarantees.
+                    </span>
+                    <span class="tags-no"></span> <br>
+                    <div class="pub-details">
+                        <div class="pub-abstract">
+                            <span class="pub-abstract-title">abstract:</span>
+                            We present Pidgin, a program analysis and understanding tool that enables the specification
+                            and enforcement of precise application-specific information security guarantees. Pidgin also
+                            allows developers to interactively explore the information flows in their applications to
+                            develop policies and investigate counter-examples.
+                            <p>
+                            Pidgin combines <em>program-dependence graphs</em> (PDGs), which precisely capture the information flows in a whole application,
+                            with a <em>custom PDG query language</em>. Queries express properties about the paths in the PDG; because paths in the PDG
+                            correspond to information flows in the application, queries can be used to specify global security policies.
+                            <p>
+                            Pidgin is scalable. Generating a PDG for a 335k line Java application takes under 90 seconds, and checking each of our
+                            policies on that PDG takes under 14 seconds. The query language is expressive, supporting a large class of precise,
+                            application-specific security guarantees. Policies are separate from the code and do not interfere with testing or
+                            development, and can be used for security regression testing.
+                            <p>
+                            We describe the design and implementation of Pidgin and report on using it: (1) to explore information security
+                            guarantees in legacy programs; (2) to develop and modify security policies concurrently with application development;
+                            and (3) to develop policies based on known vulnerabilities.
+                        </div>
+                        <a class="person-link" href="https://www.linkedin.com/in/andrew-johnson-12aa5426">Andrew Johnson</a>, 
+                            Lucas Waye, 
+                            <a class="person-link" href="http://www.thinkmoore.net/">Scott Moore</a>, 
+                            and <a class="person-link" href="http://people.seas.harvard.edu/~chong/">Stephen Chong</a><br>
+                        In Proceedings of the 36th ACM SIGPLAN Conference on Programming Langauge Design and Implementation 
+                            (<a href="http://conf.researchr.org/home/pldi2015">PLDI</a>), June 2015.<br>
+                            [<a href="papers/pidgin-pldi15.pdf">Paper</a> | <a href="http://people.seas.harvard.edu/~chong/accrue.html">Website</a>]
+                    </div>
+                </li>
+                <li data-kind="Workshop Paper" data-topic="Privacy">
+                    <a class="pub-link" href="#">Privacy integrated data stream queries</a>
+                    <span class="pub-quickdetails">, PSP 2014
+                        <br> A practical framework for which a non-expert can perform differentially private operations on data streams.
+                    </span>
+                    <span class="tags-no"></span> <br>
+                    <div class="pub-details">
+                        <div class="pub-abstract">
+                            <span class="pub-abstract-title">abstract:</span>
+                            Research on differential privacy is generally concerned with examining data sets that are
+                            static. Because the data sets do not change, every computation on them produces "one-shot"
+                            query results; the results do not change aside from randomness introduced for privacy.
+                            There are many circumstances, however, where this model does not apply, or is simply
+                            infeasible. Data streams are examples of non-static data sets where results may change as
+                            more data is streamed. Theoretical support for differential privacy with data streams has
+                            been researched in the form of differentially private streaming algorithms. In this paper,
+                            we present a practical framework for which a non-expert can perform differentially private
+                            operations on data streams. The system is built as an extension to PINQ (Privacy Integrated
+                            Queries), a differentially private programming framework for static data sets. The streaming
+                            extension provides a programmatic interface for the different types of streaming
+                            differential privacy from the literature so that the privacy trade-offs of each type of
+                            algorithm can be understood by a non-expert programmer
+                        </div>
+                        Lucas Waye<br>
+                        In Proceedings of the 1st International Workshop on Privacy and Security in Programming 
+                            (<a href="http://privacysecurityinprogramming.com/">PSP</a>), October 2014.<br>
+                            [<a href="papers/spinq-psp14.pdf">Paper</a> | 
+                             <a href="presentations/spinq-psp14.pdf">Slides</a> |
+                             <a href="https://github.com/wayetender/pinq-streaming">GitHub</a>]
+                    </div>
+                </li>
+                <li data-kind="Patent" data-topic="Distribution">
+                    <a class="pub-link" href="#">Framework for generating programs to process beacons</a> 
+                    <span class="pub-quickdetails">, US Patent (with Kevin Seng, Viral Bajaria, and Shane Moriah)
+                        <br> A translator from high-level, declarative <em>beacon specifications</em> to programs that process and validate those beacons.
+                    </span>
+                    <span class="tags-no"></span> <br>
+                    <div class="pub-details">
+                        <div class="pub-abstract">
+                            <span class="pub-abstract-title">abstract:</span>
+                            A method receives a specification for processing beacons. The beacons are associated with an
+                            event occurring at a client while a user is interacting with a web application and include
+                            unstructured data. The method parses the specification to determine an object model
+                            including objects determined from the specification where different specifications are
+                            parsed into a format of the object model. A generator is determined and each generator is
+                            configured to process the format of the object model to generate a different type of target
+                            program to process the beacons and multiple generators can process different specifications
+                            that are parsed into the format of the object model. The method runs the generator with the
+                            object model to generate a target program configured to identify the beacons for the
+                            specification, determine unstructured data in the beacons that were specified in the
+                            specification, and transform the unstructured data into structured data.
+                        </div>
+                        Lucas Waye, 
+                            <a class="person-link" href="https://www.linkedin.com/in/kevinseng">Kevin Seng</a>, 
+                            <a class="person-link" href="https://6sense.com/about-us/team/viral-bajaria/">Viral Bajaria</a>, 
+                            and <a class="person-link" href="https://www.linkedin.com/in/shanemoriah">Shane Moriah</a><br>
+                        US Patent 8,725,750. May 2014.<br>
+                        [<a href="https://www.google.com/patents/US8725750">Google Patent</a> | 
+                         <a href="http://tech.hulu.com/blog/2014/04/10/beaconspec.html">Blog Post</a>]
+                    </div>
+                </li> 
+                <li data-kind="Conference Paper" data-topic="Security,Distribution">
+                    <a class="pub-link" href="#">Fabric: A platform for secure distributed computation and storage</a>
+                    <span class="pub-quickdetails">, SOSP 2009 (with Jed Liu, Michael D. George, K. Vikram, Xin Qi, and Andrew C. Myers)
+                        <br>A high-level programming language for building open distributed applications with strong security.
+                    </span>
+                    <span class="tags-no"></span> <br>
+                    <div class="pub-details">
+                        <div class="pub-abstract">
+                            <span class="pub-abstract-title">abstract:</span>
+                            Fabric is a new system and language for building secure distributed information systems. It
+                            is a decentralized system that allows heterogeneous network nodes to securely share both
+                            information and computation resources despite mutual distrust. Its high-level programming
+                            language makes distribution and persistence largely transparent to programmers. Fabric
+                            supports data-shipping and function-shipping styles of computation: both computation and
+                            information can move between nodes to meet security requirements or to improve performance.
+                            Fabric provides a rich, Java-like object model, but data resources are labeled with
+                            confidentiality and integrity policies that are enforced through a combination of compile-
+                            time and run-time mechanisms. Optimistic, nested transactions ensure consistency across all
+                            objects and nodes. A peer-to-peer dissemination layer helps to increase availability and to
+                            balance load. Results from applications built using Fabric suggest that Fabric has a clean,
+                            concise programming model, offers good performance, and enforces security.
+                        </div>
+                         <a class="person-link" href="https://www.cs.cornell.edu/~liujed/">Jed Liu</a>, 
+                            <a class="person-link" href="http://www.cs.cornell.edu/~mdgeorge/">Michael D. George</a>, 
+                            <a class="person-link" href="http://www.cs.cornell.edu/~kvikram/">K. Vikram</a>, 
+                            <a class="person-link" href="https://sites.google.com/site/qixin99/">Xin Qi</a>, 
+                            Lucas Waye, 
+                            and <a class="person-link" href="http://www.cs.cornell.edu/andru/">Andrew C. Myers</a><br>
+                        In Proceedings of the 22nd ACM Symposium on Operating Systems Principles 
+                            (<a href="http://www.sigops.org/sosp/sosp09/">SOSP</a>), October 2009.<br>
+                            [<a href="papers/fabric-sosp09.pdf">Paper</a> | <a href="http://www.cs.cornell.edu/projects/fabric/">Website</a>]
+                    </div>
+                </li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>Activities</h2>
+            I have served as a teaching assistant for a few courses focusing on various 
+            topics from programming languages: 
+            undergraduate-level compilers (CS 153 at Harvard in <a href="https://web.archive.org/web/20130904212702/http://sites.fas.harvard.edu/~lib153/">Fall 2013</a> 
+            where I was awarded a certificate for <a href="http://bokcenter.harvard.edu/certificates-excellence">distinction in teaching</a>), 
+
+            functional programming (CS 3110 at Cornell in 
+            <a href="http://www.cs.cornell.edu/courses/cs3110/2011sp/">Spring 2011</a>, 
+            <a href="http://www.cs.cornell.edu/courses/cs3110/2010fa/">Fall 2010</a>, 
+            and <a href="http://www.cs.cornell.edu/courses/cs3110/2009fa/">Fall 2009</a>), 
+
+            up to a graduate-level seminar course in advanced topics (CS 252r at Harvard in 
+            <a href="http://www.seas.harvard.edu/courses/cs252/2015fa/">Fall 2015</a>).
+
+            <p>
+            I also enjoy the outdoors! Take a look at my <a href="#" id="checklist-show">National Parks Checklist</a> to see the extent to which I've enjoyed "America's best idea."
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="section" id="checklist">
+            <h2>National Parks Checklist <span id="seencounter"></span></h2>
+            <div id="map-canvas"></div> 
+        </div>
+
+        <div class="section">
+            <h2>Places I've Worked In the Past</h2>
+            <div class="iconlist">
+                <div class="work-icon">
+                    <div class="image-container"><a href="http://www.stresearch.com"><img src="img/str.png" alt="STR"></a></div>
+                    <div class="work-icon-title">STR</div>
+                    <div class="work-icon-subtitle">Software Consultant</div>
+                </div>
+
+                <div class="work-icon">
+                    <div class="image-container"><a href="https://www.crunchbase.com/organization/timeful"><img src="img/timeful.png" alt="Timeful"></a></div>
+                    <div class="work-icon-title">Timeful</div>
+                    <div class="work-icon-subtitle">Backend Developer</div>
+                </div>
+
+                <div class="work-icon">
+                    <div class="image-container"><a href="http://www.hulu.com"><img src="img/hulu.png" alt="Hulu"></a></div>
+                    <div class="work-icon-title">Hulu</div>
+                    <div class="work-icon-subtitle">Software Developer</div>
+                </div>
+
+                <div class="work-icon">
+                    <div class="image-container"><a href="http://www.amazon.com"><img src="img/amazon.png" alt="Amazon.com"></a></div>
+                    <div class="work-icon-title">Amazon.com</div>
+                    <div class="work-icon-subtitle">Software Developer Intern</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div id="footer">Last updated <script>document.write(document.lastModified);</script><noscript>at some point (javascript disabled)</noscript>.</div> 
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6Nxjo7JjoqZ50-DAN-iWQUvwQWqXwxuk"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        $(function() { 
+            $('body').append(Base64.decode("PGRpdiBpZD0idGhlLW5ldCI+PGEgaHJlZj0iaHR0cHM6Ly95b3V0dS5iZS9wWFBYTXhzWFQyOCI+JnBpOzwvYT48L2Rpdj4=")); 
+        });
+    </script>
+</div>
+</body>
+</html>
