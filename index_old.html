@@ -49,15 +49,7 @@
         </div>
         <div class="section">
             <h2>About Me</h2>
-            I am a computer scientist, currently spending my time maintaining 
-            and enhancing TiVo's data analytics architecture.
-            Previously I worked on the backend for Timeful (since acquired by Google) 
-            and before that I worked on Hulu's analytics platform.
-            
-            I completed a Ph.D. in Computer Science 
-            at Harvard under the guidance of 
-            <a class="person-link" href="http://people.seas.harvard.edu/~chong/">Stephen Chong</a> 
-            and also have a Master's degree from Harvard and a Bachelor's degree from Cornell.
+            I am a fifth (and final) year Ph.D. candidate advised by <a class="person-link" href="http://people.seas.harvard.edu/~chong/">Stephen Chong</a>  in the programming languages group at Harvard. My research focuses on principled approaches to building correct and secure distributed applications. I received a S.M. from Harvard in 2015 and an A.B. from Cornell in 2011.
         </div>
 
         <div class="section">
@@ -82,6 +74,26 @@
             </div>
 
             <ol id="pubs" class="lst">
+                <li data-kind="Conference Paper" data-topic="Distribution">
+                    <a class="pub-link" href="#">Whip: Higher-order contracts for modern services</a>
+                    <span class="pub-quickdetails">, ICFP 2017 (with Christos Dimoulas and Stephen Chong)
+                        <br> A runtime monitor for behavioral contracts on microservices
+                    </span>
+                    <span class="tags-no"></span> <br>
+                    <div class="pub-details">
+                        <div class="pub-abstract">
+                            <span class="pub-abstract-title">abstract:</span>
+                            Modern service-oriented applications forgo semantically rich protocols and middleware when composing services. Instead, they embrace the loosely-coupled development and deployment of services that communicate via simple network protocols. Even though these applications do expose interfaces that are higher-order in spirit, the simplicity of the network protocols forces them to rely on brittle low-level encodings. To bridge the apparent semantic gap, programmers introduce ad-hoc and error-prone defensive code. Inspired by Design by Contract, we choose a different route to bridge this gap. We introduce Whip, a contract system for modern services. Whip (i) provides programmers with a higher-order contract language tailored to the needs of modern services; and (ii) monitors services at run time to detect services that do not live up to their advertised interfaces. Contract monitoring is local to a service. Services are treated as black boxes, allowing heterogeneous implementation languages without modification to services' code. Thus, Whip does not disturb the loosely coupled nature of modern services.
+                        </div>
+                            Lucas Waye,
+                            <a class="person-link" href="http://people.seas.harvard.edu/~chrdimo/">Christos Dimouas</a>,
+                            and
+                            <a class="person-link" href="http://people.seas.harvard.edu/~chong/">Stephen Chong</a>
+                            <br>
+                        In Proceedings of the 22nd ACM SIGPLAN International Conference on Functional Programming
+                            (<a href="http://conf.researchr.org/home/icfp-2017">ICFP</a>), September 2017 <em>(to appear)</em>.
+                    </div>
+                </li>
                 <li data-kind="Conference Paper" data-topic="Security">
                     <a class="pub-link" href="#">Flexible manipulation of labeled values for information-flow control libraries</a>
                     <span class="pub-quickdetails">, ESORICS 2016 (with Marco Vassena, Pablo Buiras, and Alejandro Russo)
@@ -304,11 +316,6 @@
             <a href="http://www.seas.harvard.edu/courses/cs252/2015fa/">Fall 2015</a>).
 
             <p>
-            While in graduate school I consulted in my spare time
-            and received the <a href="http://www.darpa.mil/news-events/2015-09-09a">Rising Star</a> award
-            from DARPA for some of my work.
-
-            <p>
             Take a look at my <a href="#" id="checklist-show">National Parks Checklist</a> to see the extent to which I've enjoyed "America's best idea."
         </div>
 
@@ -322,11 +329,6 @@
         <div class="section">
             <h2>Work Experience</h2>
             <div class="iconlist">
-                <div class="work-icon">
-                    <div class="image-container"><a href="http://www.tivo.com"><img src="img/tivo.jpg" alt="TiVo"></a></div>
-                    <div class="work-icon-title">TiVo</div>
-                    <div class="work-icon-subtitle">Associte Big Data Architect</div>
-                </div>
                 
                 <div class="work-icon">
                     <div class="image-container"><a href="http://www.stresearch.com"><img src="img/str.png" alt="STR"></a></div>
@@ -369,6 +371,17 @@
         $(function() { 
             $('body').append(Base64.decode("PGRpdiBpZD0idGhlLW5ldCI+PGEgaHJlZj0iaHR0cHM6Ly95b3V0dS5iZS9wWFBYTXhzWFQyOCI+JnBpOzwvYT48L2Rpdj4=")); 
         });
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-99583977-1', 'auto');
+      ga('send', 'pageview');
+
     </script>
 </div>
 </body>

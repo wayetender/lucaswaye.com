@@ -159,12 +159,11 @@
 
 .pub-abstract {
     font-size:12px;
-    max-width:600px;
+    max-width:750px;
     padding: 5px;
     padding-top:2px;
     margin-bottom:4px;
     margin-left:-3px;
-    opacity: 0.8;
     background-color: #eee;
     border:1px dashed #333;
     color: #222;
