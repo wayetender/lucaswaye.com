@@ -387,6 +387,7 @@ a:active, a:focus {
 
 .name-links {
     text-align: top;
+    display: block;
 }
 
 .name-links i:hover {
