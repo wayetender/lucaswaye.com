@@ -83,6 +83,43 @@
             </div>
 
             <ol id="pubs" class="lst">
+                <li data-kind="Journal Paper" data-topic="Security">
+                    <a class="pub-link" href="#"><strong>MAC</strong> A Verified Static Information-Flow Control Library</a>
+                    <span class="pub-quickdetails">, JLAMP 2018 (with Marco Vassena, Alejandro Russo, and Pablo Buiras)
+                        <br> A fully verified core model of the dynamic information-flow control library LIO
+                    </span>
+                    <span class="tags-no"></span> <br>
+                    <div class="pub-details">
+                        <div class="pub-abstract">
+                            <span class="pub-abstract-title">abstract:</span>
+                            The programming language Haskell plays a unique, privileged role in information-flow
+                            control (IFC) research: it is able to enforce information security via libraries. Many
+                            state-of-the-art IFC libraries (e.g., LIO and HLIO) support a variety of advanced features
+                            like mutable data structures, exceptions, and concurrency, whose subtle interaction
+                            makes verification of security guarantees challenging. In this work, we focus on
+                            MAC, a statically-enforced IFC library for Haskell. In MAC, like other IFC libraries,
+                            computations have a well-established algebraic structure for computations (i.e., monads)
+                            responsable to manipulate labeled values—values coming from an abstract data
+                            type which associates a sensitivity label to a piece of information. In this work, we enrich
+                            labeled values with a functor structure and provide an applicative functor operator
+                            which encourages a more functional programming style and simplifies code. Furthermore,
+                            we present a full-fledged, mechanically-verified model of MAC. Specifically,
+                            we show progress-insensitive noninterference for our sequential calculus and pinpoint
+                            sufficient requirements on the scheduler to prove progress-sensitive noninterference for
+                            our concurrent calculus. For that, we study the security guarantees of MAC using term
+                            erasure, a proof technique that ensures that the same public output should be produced
+                            if secrets are erased before or after program execution. As another contribution, we
+                            extend term erasure with two-steps erasure, a flexible novel technique that greatly simplifies the noninterference proof and helps to prove many advanced features of MAC.
+                        </div>
+                            <a class="person-link" href="https://www.chalmers.se/en/Staff/Pages/vassena.aspx">Marco Vassena</a>,
+                            <a class="person-link" href="https://www.chalmers.se/en/staff/Pages/russo.aspx">Alejandro Russo</a>,
+                            <a class="person-link" href="http://people.seas.harvard.edu/~pbuiras/">Pablo Buiras</a>, 
+                            and Lucas Waye<br>
+                        In Journal of Logical and Algebraic Methods in Programming
+                            (JLAMP), 2018.<br>
+                            [<a href="papers/mac-jlamp18.pdf">Paper</a>]
+                    </div>
+                </li>
                 <li data-kind="Conference Paper" data-topic="Security,Distribution">
                     <a class="pub-link" href="#">Cryptographically secure information flow control on key-value stores</a>
                     <span class="pub-quickdetails">, CCS 2017 (with Pablo Buiras, Owen Arden, Alejandro Russo, and Stephen Chong)
