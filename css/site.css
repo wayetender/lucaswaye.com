@@ -418,11 +418,11 @@ a:active, a:focus {
     text-align: center;
 }
 .work-icon {
-    width:140px;
+    width:130px;
     height:60px;
     text-align: center;
     display:inline-block;
-    padding: 10px 20px;
+    padding: 10px 10px;
     margin:0 auto;
     overflow: hidden;
     font-size: 10px;
