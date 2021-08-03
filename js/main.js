@@ -307,7 +307,7 @@ $(function() {
 
     $('#checklist-show').click(function() {
         $('#checklist').css('display', 'block');
-        initialize();
+        
         return false;
     });
 
@@ -316,6 +316,7 @@ $(function() {
         $img.on('load', function() {
             $('#status').css('display', 'none');
             $('#loading').css('opacity', '0');
+            initialize();
         });
         if ($img[0].complete) {
           $img.load();
@@ -323,4 +324,6 @@ $(function() {
     })
 
 });
+
+
 
