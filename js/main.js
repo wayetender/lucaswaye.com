@@ -295,9 +295,9 @@ $(function() {
             [-119.53863139999999,37.8650966, 'Yosemite National Park', true],
             [-113.0266571,37.298227, 'Zion National Park', true],
             [-81.08, 38.07, 'New River Gorge', false],
-            [-106.17, 32.78, 'White Sands', false],
+            [-106.17, 32.78, 'White Sands', true],
             [-87.052, 41.6533, 'Indiana Dunes', false],
-            [-90.19, 38.63, 'Gateway Arch', false]
+            [-90.19, 38.63, 'Gateway Arch', true]
         ];
         var seen = 0;
         for (var i = markers.length - 1; i >= 0; i--) {
