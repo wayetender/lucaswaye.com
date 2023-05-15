@@ -260,7 +260,7 @@ $(function() {
             [-110.6817627,43.7904282, 'Grand Teton National Park', true],
             [-114.29986950000001,38.9832981, 'Great Basin National Park', true],
             [-105.5944061,37.79147280000001, 'Great Sand Dunes National Park &amp; Preserve', true],
-            [-83.5498238,35.6116739, 'Great Smoky Mountains National Park', false],
+            [-83.5498238,35.6116739, 'Great Smoky Mountains National Park', true],
             [-104.8687935,31.903938400000005, 'Guadalupe Mountains National Park', false],
             [-156.1550331,20.7203137, 'Haleakala National Park', true],
             [-155.199995,19.3832593, 'Hawaii Volcanoes National Park', true],
