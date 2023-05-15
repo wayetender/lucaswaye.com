@@ -293,8 +293,11 @@ $(function() {
             [-142.9855156,61.71038049999999, 'Wrangell-St. Elias National Park &amp; Preserve', false],
             [-110.5883789,44.4276507, 'Yellowstone National Park', true],
             [-119.53863139999999,37.8650966, 'Yosemite National Park', true],
-            [-113.0266571,37.298227, 'Zion National Park', true]
-
+            [-113.0266571,37.298227, 'Zion National Park', true],
+            [38.07, -81.08, 'New River Gorge', false],
+            [32.78, -106.17, 'White Sands', false],
+            [41.6533, -87.052, 'Indiana Dunes', false],
+            [38.63, -90.19, 'Gateway Arch', false]
         ];
         var seen = 0;
         for (var i = markers.length - 1; i >= 0; i--) {
