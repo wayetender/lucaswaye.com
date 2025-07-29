@@ -46,13 +46,10 @@
         </div>
         <div class="section">
             <h2>About Me</h2>
-            I'm currently a Software Engineer at Meta working on its
+            I'm currently a Software Engineer at Meta working on 
+            <a href="https://engineering.fb.com/2025/07/23/security/policy-zones-meta-purpose-limitation-batch-processing-systems/">Policy Zones for batch processing</a>
+            as part of Meta's
             <a href="https://engineering.fb.com/2024/08/27/security/privacy-aware-infrastructure-purpose-limitation-meta/">Privacy Aware Infrastructure</a>.
-            Some of the privacy projects I have worked on include
-            <a href="https://about.fb.com/news/2023/01/how-meta-uses-legal-bases-for-processing-ads-in-the-eu/">how we use data for processing Ads in the EU</a>,
-            <a href="https://www.facebook.com/help/943858526073065">Account Center</a>,
-            <a href="https://www.facebook.com/help/2207256696182627">Off-Facebook Activity</a> and 
-            <a href="https://www.facebook.com/help/224562897555674">user account deletion</a>. 
 
             Previously I worked on the analytics platforms at TiVo and Hulu.
             I also worked on the backend for Timeful 
@@ -87,6 +84,31 @@
             </div>
 
             <ol id="pubs" class="lst">
+                <li data-kind="Blog" data-topic="Privacy">
+                    <a class="pub-link" href="#">Policy Zones: How Meta enforces purpose limitation at scale in batch processing systems</a>
+                    <span class="pub-quickdetails">, Blog Post (with Wenlong Dong, 
+                            Boris Shulman, Yizhou Yan, 
+                            and Yuxuan Zhang)
+                        <br>Meta's use of Information-Flow Control for batch processing systems</span>
+                    <span class="tags-no"></span> <br>
+                    <div class="pub-details">
+                        <div class="pub-abstract">
+                            <span class="pub-abstract-title">abstract:</span>
+                            In this post, we walk through how Policy Zones supports data management in batch processing systems—including data warehouses, 
+                            streaming, and AI systems—using an example we’re all familiar with: messaging via Facebook and the Family of Apps.
+                            <br>
+                            It’s easy to overlook just how vast Meta’s backend tech stack is. Orchestrating all the data that runs through our enormous 
+                            batch processing systems is no trivial feat. Policy Zones integrates with Meta’s exabyte-scale data warehouse and processing 
+                            systems using runtime enforcement and SQL parsing to propagate and support data annotations across millions of daily data flows, 
+                            performing trillions of checks per hour, and through our stream processing systems which transport multiple petabytes per hour. 
+                        </div> Lucas Waye,
+                            Wenlong Dong, 
+                            Boris Shulman, Yizhou Yan, 
+                            and Yuxuan Zhang<br>
+                        Blost post. July 2025.
+                        [<a href="https://engineering.fb.com/2025/07/23/security/policy-zones-meta-purpose-limitation-batch-processing-systems/">Blog Post</a>]
+                    </div>
+                </li>
                 <li data-kind="Blog" data-topic="Privacy">
                     <a class="pub-link" href="#">How Meta enforces purpose limitation via Privacy Aware Infrastructure at scale</a>
                     <span class="pub-quickdetails">, Blog Post (with Wenlong Dong, 
